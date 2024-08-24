@@ -12,8 +12,8 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+--	"tanvirtin/monokai.nvim",
 	"folke/tokyonight.nvim",
-	lazy = false,
 	priority = 1000,
 	opts = {},
 	
@@ -23,7 +23,6 @@ require("lazy").setup({
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 
 	"nvim-tree/nvim-tree.lua",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
 
 	"williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim", 
@@ -34,6 +33,9 @@ require("lazy").setup({
 	"L3MON4D3/LuaSnip", -- snippets引擎，不装这个自动补全会出问题
 	"saadparwaiz1/cmp_luasnip",
 	"rafamadriz/friendly-snippets",
-	"hrsh7th/cmp-path" -- 文件路径
+	"hrsh7th/cmp-path", -- 文件路径
 
+	install = { colorschme = { "habamax" } },
+
+	checker = { enabled = true }
 })

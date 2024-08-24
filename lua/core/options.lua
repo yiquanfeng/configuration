@@ -12,4 +12,5 @@ opt.ignorecase = true
 opt.smartcase = true
 
 -- appearance
-opt.termguicolors = ture
+opt.termguicolors = true
+vim.cmd[[colorscheme tokyonight-moon]]
