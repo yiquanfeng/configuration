@@ -15,7 +15,7 @@ key = "V"
 mods = "Control|Shift"
 
 [window]
-dimensions = { columns = 135, lines = 30}
+dimensions = { columns = 80, lines = 20}
 position = { x = 200, y = 200}
 opacity = 0.9
 
